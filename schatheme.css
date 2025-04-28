@@ -1,9 +1,9 @@
 /* MAIN FONT SORA AOI */
 @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 :root {
-  --font-primary: "SORA", sans-serif;
-  --font-headline: "SORA", sans-serif;
-  --font-code: "SORA", sans-serif;
+  --font-primary: "Sora", sans-serif;
+  --font-headline: "Sora", sans-serif;
+  --font-code: "Sora", sans-serif;
 }
 
 
