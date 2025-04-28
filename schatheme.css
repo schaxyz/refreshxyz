@@ -1,9 +1,9 @@
 /* MAIN FONT SORA AOI */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 :root {
-  --font-primary: "Ubuntu", sans-serif;
-  --font-headline: "Ubuntu", sans-serif;
-  --font-code: "Ubuntu", sans-serif;
+  --font-primary: "SORA", sans-serif;
+  --font-headline: "SORA", sans-serif;
+  --font-code: "SORA", sans-serif;
 }
 
 
