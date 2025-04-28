@@ -1,10 +1,9 @@
 /* MAIN FONT SORA AOI */
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@420&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tuffy&display=swap');
 :root {
-  --font-primary: "Sora", sans-serif;
-  --font-display: "Sora", sans-serif;
-  --font-headline: "Sora", sans-serif;
-  --font-code: "Sora", monospace;
+  --font-primary: "Tuffy", sans-serif;
+  --font-headline: "Tuffy", sans-serif;
+  --font-code: "Tuffy", sans-serif;
 }
 
 
