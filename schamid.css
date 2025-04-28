@@ -1,9 +1,9 @@
 /* MAIN FONT SORA AOI */
-@import url('https://fonts.googleapis.com/css2?family=Tuffy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,500&display=swap');
 :root {
-  --font-primary: "Tuffy", sans-serif;
-  --font-headline: "Tuffy", sans-serif;
-  --font-code: "Tuffy", sans-serif;
+  --font-primary: "Rubik", sans-serif;
+  --font-headline: "Rubik", sans-serif;
+  --font-code: "Rubik", sans-serif;
 }
 
 
