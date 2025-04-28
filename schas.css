@@ -1,9 +1,9 @@
 /* MAIN FONT SORA AOI */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
 :root {
-  --font-primary: "Rubik", sans-serif;
-  --font-headline: "Rubik", sans-serif;
-  --font-code: "Rubik", sans-serif;
+  --font-primary: "Ubuntu", sans-serif;
+  --font-headline: "Ubuntu", sans-serif;
+  --font-code: "Ubuntu", sans-serif;
 }
 
 
