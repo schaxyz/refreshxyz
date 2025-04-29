@@ -309,7 +309,4 @@ display: none;
   display: none;
 }
 
-/* Move search bar */
-div[class^=search_] {
-    order: -1;
-}
+
