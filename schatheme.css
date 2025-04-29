@@ -302,3 +302,14 @@ display: none;
   height: 50vh;
   width: 50vw !important;
 }
+
+
+/* Remove EMOJI (MORE Buttons) */
+.wrapper_f563df {
+  display: none;
+}
+
+/* Move search bar */
+div[class^=search_] {
+    order: -1;
+}
