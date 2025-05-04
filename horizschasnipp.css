@@ -308,3 +308,239 @@ margin-top: -4px;
 .wrapper_f563df {
   display: none;
 }
+
+/* Fix Button Color */
+.visual-refresh .selected__9293f .icon__9293f { /* Member List */
+    color: var(--text-4);
+}
+.favoriteIcon_c9fddf { /* Favourite icon */
+   color: var(--text-4);
+}
+
+.visual-refresh #app-mount {
+  /* fix unread bar being unreadable for some unknown reason */
+  [class*="unread_"] > [class^="text__"] {
+    color: #ccc;
+  }
+
+  /* move the unread bar down (why the hell is it in the middle of nowhere) */
+  .unreadBottom__629e4 {
+    bottom: 0 !important;
+  }
+
+  /* stupid width under the channels */
+  [aria-label="Favorites (server)"] {
+    margin-bottom: -105px !important;
+  }
+
+  .visual-refresh ::placeholder {
+    color: var(--text-4);
+  }
+
+  .content_f75fb0 > .membersWrap_c8ffbb {
+    overflow: visible !important;
+  }
+
+  .wrapper__44df5 {
+    z-index: 0;
+  }
+  .toolbar__9293f {
+    padding-right: 0 !important;
+  }
+
+  /* move controls to server bar in hsl (must need!!) */
+  .bar_c38106 {
+    -webkit-app-region: no-drag;
+    .winButtons_c38106 {
+      position: relative;
+      transform-origin: center;
+      rotate: -90deg;
+      transform: translate(-12px,calc(var(--window-control-size) - (var(--gap) * 1.8)));
+      background: var(--bg-5);
+      width: calc(var(--window-control-size) * 4);
+      border-radius: 0 0 16px 16px;
+      -webkit-app-region: drag;
+      margin-top: 5px;
+      padding: var(--window-control-size) var(--gap) 5px var(--gap);
+      &::before {
+        display: none !important;
+      }
+      .winButton_c38106 {
+        width: 100%;
+        -webkit-app-region: no-drag;
+      }
+    }
+    .recentsIcon_c99c29, [href="https://support.discord.com"]
+    {
+      display: none;
+    }
+  }
+  /* nuke bar */
+  .base_c48ade {
+    grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
+    padding-top: calc(var(--gap) * 2);
+  }
+  .stack_dbd263::after {
+    height: var(--window-control-size);
+  }
+  /* nuke extra bar that i cant bother to fix */
+  > .bar_c38106 {
+    display: none !important;
+  }
+  /* update hsl stuff */
+  .content_c48ade {
+    margin-top: calc(var(--__server-container) + var(--gap));
+    .guilds_c48ade {
+      transform: translateX(var(--gap));
+    }
+  }
+  /* fix misalignment */
+  .page_c48ade {
+    padding-bottom: 0;
+  }
+}
+
+
+
+
+/* Let the User Area elements breathe */
+[class^="panels"] > [class^="container"] {
+  height: unset !important;
+  align-items: unset !important;
+  padding: 6px 8px !important;
+  flex-direction: column-reverse !important;
+  gap: 2px !important;
+}
+
+[class^="avatarWrapper"] {
+  margin-right: unset !important;
+  margin-left: unset !important;
+  padding-left: 4px !important;
+}
+
+[class^="container"] > [class*="buttons"] {
+  justify-content: space-evenly !important;
+}
+
+/* Hide chatbox when no access */
+[class^="channelTextAreaDisabled"] {
+  display: none !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  height: 0px !important;
+  width: 0px !important;
+  z-index: 0 !important;
+}
+
+/* Blurred Background while loading */
+[class*="container_"][class*="fixClipping_"] {
+  background: 0 0 !important;
+  backdrop-filter: blur(5px) !important;
+}
+
+
+/* Hide typing dots in chat bar */
+svg[class^="ellipsis"] {
+  display: none !important;
+
+  & + span {
+    margin-left: 5px !important;
+  }
+}
+
+
+/* makes profiles that are long \
+\  because of roles be smaller */
+[class^="mutuals"]
+  + [class^="root"]:not(:has(> [aria-label="View All Roles"])) {
+  max-height: 20vh;
+}
+
+/* turn every text white on hover */
+*:hover {
+  color: rgba(255, 255, 255, 0.679) !important;
+}
+
+/* Comfy Quick Switcher */
+.quickswitcher_ac6cb0 {
+  background: 0 0 !important;
+  padding: 10px;
+  background-color: transparent !important;
+  backdrop-filter: blur(20px);
+  > * {
+    background: inherit !important;
+    background-color: inherit !important;
+  }
+  .scroller_ac6cb0 {
+    margin: 0;
+    border-radius: 0 0 8px 8px;
+    scrollbar-width: none;
+    padding: 4px !important;
+  }
+  .input_ac6cb0 {
+    height: 50px;
+  }
+  .input_ac6cb0[value=""] {
+    border-radius: 8px;
+  }
+  .input_ac6cb0:not([value=""]) {
+    border-radius: 8px 8px 0 0;
+  }
+  .protip_ac6cb0 {
+    /* screw the protips */
+    display: none;
+  }
+  .result__71961 {
+    border-radius: 8px;
+  }
+  .content__99f8c
+    > div:not(.result__71961):not([aria-hidden="true"])
+    > .content__71961 {
+    height: 20px;
+    line-height: 20px;
+    > .header__71961 {
+      line-height: 20px;
+      margin-top: 0;
+      margin-bottom: 4px;
+    }
+  }
+}
+.backdrop__1a911:has(+ .layer_bc663c .quickswitcher_ac6cb0) {
+  opacity: 0;
+}
+
+
+
+/* Smaller banner */
+.notice__6e2b9 {
+  z-index: 102;
+  height: fit-content;
+}
+
+/* dont remember what this was for */
+form > div.focusLock__49fc1 > div.rootWithShadow__49fc1 {
+  background-color: color-mix(
+    in srgb,
+    transparent 50%,
+    var(--modal-background)
+  );
+
+  .horizontalReverse__7c0ba {
+    background-color: color-mix(
+      in srgb,
+      transparent 50%,
+      var(--modal-footer-background)
+    );
+  }
+
+  .input__0f084 {
+    background-color: color-mix(
+      in srgb,
+      transparent 50%,
+      var(--input-background)
+    );
+  }
+}
+
+
+
