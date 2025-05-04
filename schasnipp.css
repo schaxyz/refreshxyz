@@ -189,11 +189,8 @@ span[class*="timestamp_"] > [aria-label^="Today at"]::before {
 
 /* Customize Search Bar */
 .searchBar__97492 {
-	width: auto !important;
-	min-width: 90px;
-}
-.search__49676 .iconContainer_fea832 {
-  display: none;
+   width: auto !important;
+   min-width: 90px;
 }
 
 
