@@ -401,8 +401,6 @@ margin-top: -4px;
 }
 
 
-
-
 /* Let the User Area elements breathe */
 [class^="panels"] > [class^="container"] {
   height: unset !important;
@@ -422,15 +420,6 @@ margin-top: -4px;
   justify-content: space-evenly !important;
 }
 
-/* Hide chatbox when no access */
-[class^="channelTextAreaDisabled"] {
-  display: none !important;
-  opacity: 0 !important;
-  position: absolute !important;
-  height: 0px !important;
-  width: 0px !important;
-  z-index: 0 !important;
-}
 
 /* Blurred Background while loading */
 [class*="container_"][class*="fixClipping_"] {
@@ -448,13 +437,6 @@ svg[class^="ellipsis"] {
   }
 }
 
-
-/* makes profiles that are long \
-\  because of roles be smaller */
-[class^="mutuals"]
-  + [class^="root"]:not(:has(> [aria-label="View All Roles"])) {
-  max-height: 20vh;
-}
 
 /* turn every text white on hover */
 *:hover {
@@ -510,7 +492,6 @@ svg[class^="ellipsis"] {
 }
 
 
-
 /* Smaller banner */
 .notice__6e2b9 {
   z-index: 102;
@@ -541,6 +522,3 @@ form > div.focusLock__49fc1 > div.rootWithShadow__49fc1 {
     );
   }
 }
-
-
-
