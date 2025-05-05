@@ -292,3 +292,42 @@ margin-top: -4px;
     border-radius: 4px 0 0 4px;
     backdrop-filter: blur(10px) saturate(4) brightness(1.6);
 }
+
+/* Fix Button Color */
+.visual-refresh .selected__9293f .icon__9293f { /* Member List */
+    color: var(--text-4);
+}
+.favoriteIcon_c9fddf { /* Favourite icon */
+   color: var(--text-4);
+}
+
+
+/* Hide typing dots in chat bar */
+svg[class^="ellipsis"] {
+  display: none !important;
+
+  & + span {
+    margin-left: 5px !important;
+  }
+}
+
+/* Let the User Area elements breathe */
+[class^="panels"] > [class^="container"] {
+  height: unset !important;
+  align-items: unset !important;
+  padding: 6px 8px !important;
+  flex-direction: column-reverse !important;
+  gap: 2px !important;
+}
+
+[class^="avatarWrapper"] {
+  margin-right: unset !important;
+  margin-left: unset !important;
+  padding-left: 4px !important;
+}
+
+[class^="container"] > [class*="buttons"] {
+  justify-content: space-evenly !important;
+}
+
+
