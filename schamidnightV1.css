@@ -211,11 +211,6 @@ margin-top: -4px;
   max-width: unset !important;
 }
 
-/* Add Background Color Discover */
-.circleIconButton__5bc7e {
-  background-color: var(--bg-3);
-}
-
 
 /* Fancy Spotify Controls By Fripe  */
 #vc-spotify-player {
