@@ -440,7 +440,7 @@ svg[class^="ellipsis"] {
 
 /* turn every text white on hover */
 *:hover {
-  color: rgba(255, 255, 255, 0.679) !important;
+  color: var(--text-1) !important;
 }
 
 /* Comfy Quick Switcher */
@@ -577,3 +577,12 @@ form > div.focusLock__49fc1 > div.rootWithShadow__49fc1 {
     border-radius: 4px 0 0 4px;
     backdrop-filter: blur(10px) saturate(4) brightness(1.6);
 }
+
+
+
+/* Remove Ads Shop Edit Profile */
+.container__8279f {
+    display: none;
+}
+
+
