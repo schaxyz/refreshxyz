@@ -87,7 +87,10 @@ button[aria-label|="Open Translate Modal"]{  /* Hide translate button */
   display: none;
 }
 
-
+/* Remove Ads Shop Edit Profile */
+.container__8279f {
+    display: none;
+}
 
 /* FIX STUFF */
 /* Fix Add Today Timestamp */
