@@ -275,7 +275,8 @@ svg[class^="ellipsis"] {
   }
 }
 
-/* Let the User Area elements breathe */
+
+/* Let the User Area elements breathe by nspg911*/
 [class^="panels"] > [class^="container"] {
   height: unset !important;
   align-items: unset !important;
@@ -283,15 +284,23 @@ svg[class^="ellipsis"] {
   flex-direction: column-reverse !important;
   gap: 2px !important;
 }
-
 [class^="avatarWrapper"] {
   margin-right: unset !important;
   margin-left: unset !important;
   padding-left: 4px !important;
 }
-
 [class^="container"] > [class*="buttons"] {
   justify-content: space-evenly !important;
 }
-
+/* Move the call buttons by nspg911*/
+.visual-refresh #app-mount [class*="voiceButtonsContainer"] {
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: var(--gap);
+  > button {
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+  }
+}
 
