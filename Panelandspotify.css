@@ -373,8 +373,8 @@
   padding-left: var(--space-12);
 }
 .container__37e49.container__37e49 {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   padding: 0 !important;
   margin: 0;
   transition: background-color .2s ease;
@@ -552,4 +552,6 @@
   grid-area: vcSpotifyDuration;
   justify-content: end;
 }
+
+
 
