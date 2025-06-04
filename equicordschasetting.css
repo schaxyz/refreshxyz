@@ -1,0 +1,430 @@
+/* CSS code Import */
+/* CSS BY Lithwack */
+/* Changing vencord icon to Equicord */
+/* Actual important stuff */
+
+
+.selectedBackground_e681d1,
+.premiumLabel_e681d1 svg,
+.tabBarItemContainer_c7e907 svg {
+    display: none;
+}
+.sidebar__23e6b {
+    margin-right: 8px;
+}
+.sidebar__23e6b .separator_b3f026 {
+    margin-left: 20px !important;
+}
+.sidebar__23e6b .header_b3f026 {
+    margin-left: 10px !important;
+
+}
+.sidebar__23e6b .themed_b3f026 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 12px;
+    height: 30px !important;
+    overflow: visible;
+}
+.sidebar__23e6b .themed_b3f026::before {
+    content: "";
+    position: absolute;
+    width: var(--glamour-icon-size);
+    height: var(--glamour-icon-size);
+    background-color: var(--interactive-normal);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    margin-right: 12px;
+    margin-left: var(--glamour-icon-gap) !important;
+    pointer-events: none;
+    z-index: 2;
+}
+/* User Settings */
+div[data-tab-id="My Account"]::before {
+    mask-image: var(--svg-my-account);
+}
+div[data-tab-id="Profile Customization"]::before {
+    mask-image: var(--svg-profiles);
+}
+div[data-tab-id="Content & Social"]::before {
+    mask-image: var(--svg-content-social);
+}
+div[data-tab-id="Data & Privacy"]::before {
+    mask-image: var(--svg-data-privacy);
+}
+div[data-tab-id="Family Center"]::before {
+    mask-image: var(--svg-family-center);
+}
+div[data-tab-id="Authorized Apps"]::before {
+    mask-image: var(--svg-authorized-apps);
+}
+div[data-tab-id="Sessions"]::before {
+    mask-image: var(--svg-devices);
+}
+div[data-tab-id="Connections"]::before {
+    mask-image: var(--svg-connections);
+}
+div[data-tab-id="Settings Clips"]::before {
+    mask-image: var(--svg-clips);
+}
+/* Billing Settings */
+div[data-tab-id="Discord Nitro"]::before {
+    mask-image: var(--svg-nitro);
+    transition: background-color 0.3s ease;
+}
+div[data-tab-id="Discord Nitro"]:focus-within::before,
+div[data-tab-id="Discord Nitro"]:hover::before {
+    background-color: var(--brand-500);
+}
+div[data-tab-id="Nitro Server Boost"]::before {
+    mask-image: var(--svg-server-boost);
+    transition: background-color 0.3s ease;
+}
+div[data-tab-id="Nitro Server Boost"]:focus-within::before,
+div[data-tab-id="Nitro Server Boost"]:hover::before {
+    background-color: var(--guild-boosting-pink);
+}
+div[data-tab-id="Subscriptions"]::before {
+    mask-image: var(--svg-subscriptions);
+}
+div[data-tab-id="Library Inventory"]::before {
+    mask-image: var(--svg-gift-inventory);
+}
+div[data-tab-id="Billing"]::before {
+    mask-image: var(--svg-billing);
+}
+/* App Settings */
+div[data-tab-id="Appearance"]::before {
+    mask-image: var(--svg-appearance);
+}
+div[data-tab-id="Accessibility"]::before {
+    mask-image: var(--svg-accessibility);
+}
+div[data-tab-id="Voice & Video"]::before {
+    mask-image: var(--svg-voice-video);
+}
+div[data-tab-id="Text & Images"]::before {
+    mask-image: var(--svg-chat);
+}
+div[data-tab-id="Notifications"]::before {
+    mask-image: var(--svg-notifications);
+}
+div[data-tab-id="Keybinds"]::before {
+    mask-image: var(--svg-keybinds);
+}
+div[data-tab-id="Language"]::before {
+    mask-image: var(--svg-language);
+}
+div[data-tab-id="Windows"]::before {
+    mask-image: var(--svg-windows-settings);
+}
+div[data-tab-id="Streamer Mode"]::before {
+    mask-image: var(--svg-streamer-mode);
+}
+div[data-tab-id="Advanced"]::before {
+    mask-image: var(--svg-advanced);
+}
+/* Vencord Settings*/
+div[data-tab-id="EquicordSettings"]::before {
+    mask-image: var(--svg-vencord);
+}
+div[data-tab-id="EquicordPlugins"]::before {
+    mask-image: var(--svg-plugins);
+}
+div[data-tab-id="EquicordThemes"]::before {
+    mask-image: var(--svg-themes);
+}
+div[data-tab-id="EquicordUpdater"]::before {
+    mask-image: var(--svg-updater);
+}
+div[data-tab-id="EquicordCloud"]::before {
+    mask-image: var(--svg-cloud);
+}
+div[data-tab-id="EquicordSettingsSync"]::before {
+    mask-image: var(--svg-backup-restore);
+}
+div[data-tab-id="Vesktop"]::before {
+    mask-image: var(--svg-vekstop);
+}
+/* Activity Settings */
+div[data-tab-id="Activity Privacy"]::before {
+    mask-image: var(--svg-activity-privacy);
+}
+div[data-tab-id="Game Activity"]::before {
+    mask-image: var(--svg-registered-games);
+}
+div[data-tab-id="Overlay"]::before {
+    mask-image: var(--svg-game-overlay);
+}
+div[data-tab-id="changelog"]::before {
+    mask-image: var(--svg-whats-new);
+}
+div[data-tab-id="merchandise"]::before {
+    mask-image: var(--svg-merch);
+}
+div[data-tab-id="Hypesquad Online"]::before {
+    mask-image: var(--svg-HypeSquad);
+}
+/* Developer Only */
+div[data-tab-id="Experiments"]::before {
+    mask-image: var(--svg-experiments);
+}
+div[data-tab-id="Developer Options"]::before {
+    mask-image: var(--svg-dev-options);
+}
+div[data-tab-id="Hotspot Options"]::before {
+    mask-image: var(--svg-hotspot-options);
+}
+div[data-tab-id="Dismissible Content Options"]::before {
+    mask-image: var(--svg-dismiss-contents);
+}
+div[data-tab-id="Payment Flow Modals"]::before {
+    mask-image: var(--svg-payment-flow);
+}
+div[data-tab-id="Revenue Storybook"]::before {
+    mask-image: var(--svg-revenue-book);
+}
+div[data-tab-id="Virtual Currency Configuration"]::before {
+    mask-image: var(--svg-currency-config);
+}
+div[data-tab-id="Design System"]::before {
+    mask-image: var(--svg-design-systems);
+}
+div[data-tab-id="Text Playground"]::before {
+    mask-image: var(--svg-text-playground);
+}
+div[data-tab-id="Text Component"]::before {
+    mask-image: var(--svg-text-components);
+}
+div[data-tab-id="Intl Testing"]::before {
+    mask-image: var(--svg-intl-testing);
+}
+div[data-tab-id="Shop Keeper"]::before {
+    mask-image: var(--svg-shop-keeper);
+}
+div[data-tab-id="Profile Effects Preview Tool"]::before {
+    mask-image: var(--svg-PFX-editor);
+}
+div[data-tab-id="Nameplates Preview Tool"]::before {
+    mask-image: var(--svg-nameplates-tool);
+}
+div[data-tab-id="Web Setting Tree Tool"]::before {
+    mask-image: var(--svg-web-tree-tool);
+}
+div[data-tab-id="logout"]::before {
+    mask-image: var(--svg-logout);
+}
+div[data-tab-id="logout"]::before {
+    mask-image: var(--svg-logout);
+    transition: background-color 0.3s ease;
+}
+div[data-tab-id="logout"]:focus-within::before,
+div[data-tab-id="logout"]:hover::before {
+    background-color: var(--red-400);
+}
+/* Server Settings */
+div[data-tab-id="PROFILE"]::before {
+    mask-image: var(--svg-server-profile);
+}
+div[data-tab-id="TAG"]::before {
+    mask-image: var(--svg-server-tag);
+}
+div[data-tab-id="ENGAGEMENT"]::before {
+    mask-image: var(--svg-engagement);
+}
+div[data-tab-id="BOOST_PERKS"]::before {
+    mask-image: var(--svg-boost-perks);
+}
+/* Expression */
+div[data-tab-id="EMOJI"]::before {
+    mask-image: var(--svg-emoji);
+}
+div[data-tab-id="STICKERS"]::before {
+    mask-image: var(--svg-stickers);
+}
+div[data-tab-id="SOUNDBOARD"]::before {
+    mask-image: var(--svg-soundboard);
+}
+/* People */
+div[data-tab-id="MEMBERS"]::before {
+    mask-image: var(--svg-members);
+}
+div[data-tab-id="ROLES"]::before {
+    mask-image: var(--svg-roles);
+}
+div[data-tab-id="INVITES"]::before {
+    mask-image: var(--svg-invites);
+}
+div[data-tab-id="ACCESS"]::before {
+    mask-image: var(--svg-access);
+}
+/* Apps */
+div[data-tab-id="INTEGRATIONS"]::before {
+    mask-image: var(--svg-intergrations);
+}
+div[data-tab-id="APP_DIRECTORY"]::before {
+    mask-image: var(--svg-app-directory);
+}
+/* Moderation */
+div[data-tab-id="MODERATION"]::before {
+    mask-image: var(--svg-safety-setup);
+}
+div[data-tab-id="SAFETY"]::before {
+    mask-image: var(--svg-safety-setup);
+}
+div[data-tab-id="AUDIT_LOG"]::before {
+    mask-image: var(--svg-audit-log);
+}
+div[data-tab-id="BANS"]::before {
+    mask-image: var(--svg-bans);
+}
+div[data-tab-id="GUILD_AUTOMOD"]::before {
+    mask-image: var(--svg-auto-mod);
+}
+div[data-tab-id="COMMUNITY"]::before {
+    mask-image: var(--svg-enable-community);
+}
+div[data-tab-id="ONBOARDING"]::before {
+    mask-image: var(--svg-onboarding);
+}
+div[data-tab-id="ANALYTICS"]::before {
+    mask-image: var(--svg-server-insights);
+}
+div[data-tab-id="COMMUNITY_WELCOME"]::before {
+    mask-image: var(--svg-community-welcome);
+}
+div[data-tab-id="DISCOVERY_LANDING_PAGE"]::before {
+    mask-image: var(--svg-landing-page);
+}
+div[data-tab-id="ROLE_SUBSCRIPTIONS"]::before {
+    mask-image: var(--svg-subscriptions);
+}
+div[data-tab-id="GUILD_PREMIUM"]::before {
+    mask-image: var(--svg-server-boost);
+    transition: background-color 0.3s ease;
+}
+div[data-tab-id="GUILD_PREMIUM"]:focus-within::before,
+div[data-tab-id="GUILD_PREMIUM"]:hover::before {
+    background-color: var(--guild-boosting-pink);
+}
+div[data-tab-id="GUILD_TEMPLATES"]::before {
+    mask-image: var(--svg-server-template);
+}
+div[data-tab-id="DELETE"]::before {
+    mask-image: var(--svg-delete-server);
+    transition: background-color 0.3s ease;
+}
+div[data-tab-id="DELETE"]:focus-within::before,
+div[data-tab-id="DELETE"]:hover::before {
+    background-color: var(--red-400);
+}
+/* Channel Settings */
+div[data-tab-id="OVERVIEW"]::before {
+    mask-image: var(--svg-overview);
+}
+div[data-tab-id="PERMISSIONS"]::before {
+    mask-image: var(--svg-permissions);
+}
+div[data-tab-id="INSTANT_INVITES"]::before {
+    mask-image: var(--svg-invites);
+}
+
+/* List of SVG vars */
+
+:root {
+/* User Settings */
+    --svg-my-account: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/My-Account.svg');
+    --svg-profiles: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Profiles.svg');
+    --svg-content-social: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Content-Social.svg');
+    --svg-data-privacy: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Data-Privacy.svg');
+    --svg-family-center: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Family-Center.svg');
+    --svg-authorized-apps: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Devices.svg');
+    --svg-devices: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Authorized-Apps.svg');
+    --svg-connections: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Connections.svg');
+    --svg-clips: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Clips.svg');
+/* Billing Settings */
+    --svg-nitro: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Nitro.svg');
+    --svg-server-boost: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server-Boost.svg');
+    --svg-subscriptions: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Subscriptions.svg');
+    --svg-gift-inventory: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Gift-Inventory.svg');
+    --svg-billing: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Billing.svg');
+/* App Settings */
+    --svg-appearance: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Appearance.svg');
+    --svg-accessibility: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Accessibility.svg');
+    --svg-voice-video: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Voice-Video.svg');
+    --svg-chat: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Chat.svg');
+    --svg-notifications: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Notifications.svg');
+    --svg-keybinds: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Keybinds.svg');
+    --svg-language: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Language.svg');
+    --svg-windows-settings: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Windows-Settings.svg');
+    --svg-streamer-mode: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Streamer-Mode.svg');
+    --svg-advanced: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Advanced.svg');
+/* Vencord Settings */
+    --svg-vencord: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Vencord.svg');
+    --svg-plugins: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Plugins.svg');
+    --svg-themes: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Themes.svg');
+    --svg-updater: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Updater.svg');
+    --svg-cloud: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Cloud.svg');
+    --svg-backup-restore: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Backup-Restore.svg');
+    --svg-vekstop: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Vesktop.svg');
+/* Activity Settings */
+    --svg-activity-privacy: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Activity-Privacy.svg');
+    --svg-registered-games: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Registered-Games.svg');
+    --svg-game-overlay: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Game-Overlay.svg');
+    --svg-whats-new: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Whats-New.svg');
+    --svg-merch: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Merch.svg');
+    --svg-HypeSquad: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/HypeSquad.svg');
+/* Developer Only */
+    --svg-experiments: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Experiments.svg');
+    --svg-dev-options: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Developer-Options.svg');
+    --svg-hotspot-options: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Hotspot-Options.svg');
+    --svg-dismiss-contents: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Dismissible-Contents.svg');
+    --svg-payment-flow: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Payment-Flow-Modals.svg');
+    --svg-revenue-book: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Revenue-Storybook.svg');
+    --svg-currency-config: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Virtual-Currency-Config.svg');
+    --svg-design-systems: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Design-Systems.svg');
+    --svg-text-playground: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Text-Playground.svg');
+    --svg-text-components: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Text-Components.svg');
+    --svg-intl-testing: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Intl-Testing.svg');
+    --svg-shop-keeper: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Shop-Keeper.svg');
+    --svg-PFX-editor: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/PFX-Editor.svg');
+    --svg-nameplates-tool: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Nameplates-Preview-Tool.svg');
+    --svg-web-tree-tool: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Web-Setting-Tree-Tool.svg');
+    --svg-logout: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Log-Out.svg');
+    
+/* Server Settings */
+    --svg-server-profile: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Server-Profile.svg');
+    --svg-server-tag: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Server-Tag.svg');
+    --svg-engagement: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Engagement.svg');
+    --svg-boost-perks: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Boost-Perks.svg');
+/* Expression */
+    --svg-emoji: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Emoji.svg');
+    --svg-stickers: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Stickers.svg');
+    --svg-soundboard: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Soundboard.svg');
+/* People */
+    --svg-members: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Members.svg');
+    --svg-roles: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Roles.svg');
+    --svg-invites: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Invites.svg');
+    --svg-access: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Access.svg');
+/* Apps */
+    --svg-intergrations: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Intergrations.svg');
+    --svg-app-directory: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/App-Directory.svg');
+/* Moderation */
+    --svg-safety-setup: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Safety-Setup.svg');
+    --svg-audit-log: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Audit-Log.svg');
+    --svg-bans: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Bans.svg');
+    --svg-auto-mod: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/AutoMod.svg');
+    --svg-enable-community: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Enable-Community.svg');
+    --svg-server-template: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Server-Template.svg');
+    --svg-delete-server: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Delete-Server.svg');
+    --svg-onboarding: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Onboarding.svg');
+    --svg-server-insights: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Server-Insights.svg');
+    --svg-community-welcome: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Community-Welcome.svg');
+    --svg-landing-page: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Server%20Settings/Landing-Page.svg');
+/* Channel Settings */
+    --svg-overview: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Channel%20Settings/Overview.svg');
+    --svg-permissions: url('https://raw.githubusercontent.com/lithwack/Settings-Glamour/refs/heads/main/SVGs/Channel%20Settings/Permissions.svg');
+}
