@@ -146,7 +146,7 @@ div[data-tab-id="EquicordCloud"]::before {
 div[data-tab-id="EquicordSettingsSync"]::before {
     mask-image: var(--svg-backup-restore);
 }
-div[data-tab-id="Vesktop"]::before {
+div[data-tab-id="Equibop"]::before {
     mask-image: var(--svg-vekstop);
 }
 /* Activity Settings */
