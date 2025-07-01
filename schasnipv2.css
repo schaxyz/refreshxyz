@@ -3,12 +3,11 @@
 @import url('https://schaxyz.github.io/refreshxyz/rainbownpanel.css');
 
 /* MAIN FONT SORA AOI */
-/* MAIN FONT SORA AOI */
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 :root {
-  --font-primary: "DM Mono", monospace;
-  --font-headline: "DM Mono", monospace;
-  --font-code: "DM Mono", monospace;
+  --font-primary: "Sora", monospace;
+  --font-headline: "Sora", monospace;
+  --font-code: "Sora", monospace;
 }
 
 
