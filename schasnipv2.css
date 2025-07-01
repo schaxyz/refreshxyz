@@ -3,12 +3,13 @@
 @import url('https://schaxyz.github.io/refreshxyz/rainbownpanel.css');
 
 /* MAIN FONT SORA AOI */
-@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Menbere:wght@100..700&display=swap');
 :root {
-  --font-primary: "Sora", sans-serif;
-  --font-headline: "Sora", sans-serif;
-  --font-code: "Sora", sans-serif;
+  --font-primary: "Menbere", sans-serif;
+  --font-headline: "Menbere", sans-serif;
+  --font-code: "Menbere", sans-serif;
 }
+
 
 
 /* UI CLEANUP – REMOVE UNWANTED STUFF */
