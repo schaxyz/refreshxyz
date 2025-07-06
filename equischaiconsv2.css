@@ -944,35 +944,6 @@ path[d="M15.44,5H12.88v6.42L11.12,9.67,9.38,11.42V5H7a.58.58,0,0,0-.58.58V16.5a.
 }
 
 
-/* Plain Folder Icon Size Pastel */
-.expandedFolderIconWrapper__48112::after,
-.folderPreview__48112::after {
-  content: "";
-  background-color: transparent;
-  width: 24px;
-  height: 24px;
-  top: 60px;
-  right: 12px;
-  position: absolute;
-  transition: opacity 0.2s ease;
-  transform: scale(1.2);
-}
-.folderPreview__48112:hover::after {
-  opacity: 0;
-}
-.folderPreview__48112 > .folderPreviewGuildIcon__48112 {
-  opacity: 0.5;
-  filter: blur(2.2px);
-  transition: opacity 0.2s ease, filter 0.2s ease !important;
-}
-.folderPreview__48112:hover > .folderPreviewGuildIcon__48112 {
-  opacity: 1;
-  filter: blur(0px);
-}
-.theme-dark .hiddenVisually__27f77[aria-expanded="false"] {
-  background-color: #000000;
-}
-
 
 /* Window Control Fancy Button By Moonself */
 /* First window button is usually Minimize */
