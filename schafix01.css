@@ -1,0 +1,269 @@
+
+/* Colourful forum bar */
+@import url('https://schaxyz.github.io/refreshxyz/rainbownpanel.css');
+
+/* MAIN FONT SORA AOI */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+:root {
+  --font-primary: "Sora", monospace;
+  --font-headline: "Sora", monospace;
+  --font-code: "Sora", monospace;
+}
+
+
+/* UI CLEANUP – REMOVE UNWANTED STUFF */
+/* Remove certain message actions for a cleaner UI */
+[aria-label*="Create Thread"], /* Hides thread creation button */
+[aria-label*="Mark Unread"], /* Hides "Mark as Unread" button */
+[aria-label*="Copy Link"], /* Hides the option to copy message link */
+[aria-label*="Pin Message"], /* Hides the pin message button */
+[aria-label*="Copy Message ID"] { /* Hides message ID copy option */
+  display: none;
+}
+
+/* Remove Create Invite & Channel Buttons */
+[class^="iconVisibility_"] [aria-label="Create Invite"],
+[class^="iconVisibility_"] [aria-label="Edit Channel"],
+[class^="iconVisibility_"] [aria-label="Create Channel"] {
+  display: none !important;
+}
+
+/* Remove App Edit Image Button */
+div[aria-label="Edit Image with Apps"] {
+  display: none;
+}
+
+/* Remove Active Now Activities */
+[class^=nowPlayingColumn_] {
+  display: none;
+}
+
+/* Remove Reaction Right-Click Menu */
+[id^="message-quickreact-"] {
+  display: none !important;
+}
+#message>div>.wrapper_f563df {
+  display: none;
+}
+
+/* Remoove Activity Member List*/
+[class*='membersGroup']:has([role=button]), /* Hides member group with buttons */
+[class*='member'] [class*='container']:has([class*='badges']) { /* Hides member containers with badges */
+  display: none;
+}
+
+/* Remove Reply & Send Reaction Buttons Profile */
+.avatarPopover__2d0ab {
+  display: none!important;
+}
+
+/* Remove Quests on UserPanel */
+section[class^="panels_"]>div[class^="mask_"] {
+  display: none;
+}
+
+
+/* Remove emoji reactions */
+[class^=hoverBarButton_][aria-label^="Click to react"], 
+[class^=separator_] {
+  display: none !important;
+}
+
+/* Remove buttons related to gifts, GIFs, stickers, and translation */
+button[aria-label|="Send a gift"], /* Hide gift sending button */
+button[aria-label|="Open GIF picker"], /* Hide GIF picker button */
+button[aria-label|="Open sticker picker"], /* Hide sticker picker button */
+button[aria-label|="Open Translate Modal"]{  /* Hide translate button */
+  display: none;
+}
+
+/* Remove App Launcher (chat bar) */
+.visual-refresh .buttonContainer_e6e74f {
+  display: none;
+}
+
+/* Remove EMOJI (MORE Buttons) */
+.wrapper_f563df {
+  display: none;
+}
+
+/* Remove Ads Shop Edit Profile */
+.container__8279f {
+    display: none;
+}
+
+/* FIX STUFF */
+/* Fix Add Today Timestamp */
+span[class*="timestamp_"] > [aria-label^="Today at"]::before {
+  content: "Today at "
+}
+
+/* Fix Reduce Channel List Spacing */
+[class="link__2ea32"] {
+  padding-block: 1.5px;
+}
+
+
+
+/* SNIPPETS ADDED */
+/* ROLE COLOR PROFILE By Refact0r*/
+.role_dfa8b6.pill_dfa8b6 {
+  position: relative;
+  background: none;
+  border: none;
+  padding-left: 28px;
+}
+.role_dfa8b6.pill_dfa8b6 > span {
+  z-index: 1;
+}
+.role_dfa8b6.pill_dfa8b6 .roleRemoveButton_dfa8b6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 !important;
+}
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569 {
+    margin: 6px 8px;
+}
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--radius-xs);
+  filter: brightness(1.1);
+  opacity: 0.25;
+}
+
+
+/* Link Hover with Unread Badge Effect by Refactor */
+:root {
+  --list-item-transition: 0.2s ease;
+}
+.wrapper__2ea32 .link__2ea32 {
+  transition: margin-left var(--list-item-transition);
+}
+.unread__2ea32 {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent-3);
+  transition: transform var(--list-item-transition), background var(--list-item-transition);
+}
+.wrapper__2ea32:hover .link__2ea32 {
+  margin-left: 5px;
+  opacity: 0.9;
+}
+.wrapper__2ea32:hover .unread__2ea32 {
+  transform: scale(1.2);
+  background: url('https://files.catbox.moe/q4oi4j.png?size=80') no-repeat center / contain;
+}
+
+
+/* Active Channel Highlight */
+.modeSelected__2ea32 .name__2ea32 {     
+  color: var(--accent-2);
+}
+
+
+/* Pinned Page Switcher */
+[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
+  position: sticky;
+  bottom: 10px;
+  z-index: 999;
+  border-radius: 10px;
+  background: var(--bg-overlay-1, var(--background-secondary));
+}
+
+
+/* Server Name Tooltip 1 LINE */
+[class^=tooltip] {
+  max-width: unset !important;
+}
+
+
+/* Fix Button Color */
+.visual-refresh .selected__9293f .icon__9293f { /* Member List */
+    color: var(--text-4);
+}
+.favoriteIcon_c9fddf { /* Favourite icon */
+   color: var(--text-4);
+}
+
+
+/* Hide typing dots in chat bar */
+svg[class^="ellipsis"] {
+  display: none !important;
+
+  & + span {
+    margin-left: 5px !important;
+  }
+}
+
+
+/* reduce context menu padding by nemlus*/
+.layer_da8173 > .menu_c1e9c4 {
+    min-width: 0;
+    width: 171px !important;
+    .scroller_c1e9c4 {
+        /* border margin */
+        margin: -4px;
+    }
+    .separator_c1e9c4 {
+        /* separator margin */
+        margin: 1px 8px !important;
+    }
+    .wrapper_f563df {
+        /* reactions margin */
+        padding: 0px !important;
+        margin: 1px;
+    }
+    .item_c1e9c4 {
+        /* min-height is 32px as default, change value for desired look */
+        min-height: 0;
+        /* padding is 4px 8px as default, change value for desired look */
+        padding: 4px 8px;
+    }
+    .icon_f563df {
+        /* reactions size */
+        width: 18px;
+    }
+    .button_f563df {
+        /* reactions border size */
+        width: 36px;
+        height: 36px;
+        border-radius: 4px;
+    }
+    .icon_c1e9c4 {
+        /* icons size */
+        width: 18px;
+        height: 18px;
+    }
+    .iconContainer_c1e9c4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Toolbar fix */
+.trailing_c38106 {
+    gap: var(--space-4);
+}
+.trailing_c38106::before {
+    border-left: 1px solid var(--border-subtle);
+    content: "";
+    display: block;
+    height: calc(var(--custom-app-top-bar-height) - var(--space-12));
+    margin-right: var(--space-4);
+}
+.toolbar__9293f {
+    gap: var(--space-4) !important;
+    margin-right: -5px;
+}
