@@ -98,10 +98,6 @@ span[class*="timestamp_"] > [aria-label^="Today at"]::before {
   content: "Today at "
 }
 
-/* Fix MemberList Resize */
-.member__5d473 { 
-  margin-left: -4px;
-}
 
 /* Fix Reduce Channel List Spacing */
 [class="link__2ea32"] {
