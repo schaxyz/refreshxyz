@@ -2,14 +2,6 @@
 /* Colourful forum bar */
 @import url('https://schaxyz.github.io/refreshxyz/rainbownpanel.css');
 
-/* MAIN FONT SORA AOI */
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
-:root {
-  --font-primary: "Sora", monospace;
-  --font-headline: "Sora", monospace;
-  --font-code: "Sora", monospace;
-}
-
 
 /* UI CLEANUP – REMOVE UNWANTED STUFF */
 /* Remove certain message actions for a cleaner UI */
