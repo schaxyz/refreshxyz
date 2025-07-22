@@ -143,7 +143,7 @@ div[data-tab-id="EquicordUpdater"]::before {
 div[data-tab-id="EquicordCloud"]::before {
     mask-image: var(--svg-cloud);
 }
-div[data-tab-id="EquicordSettingsSync"]::before {
+div[data-tab-id="setting/tabsSync"]::before {
     mask-image: var(--svg-backup-restore);
 }
 div[data-tab-id="Equibop"]::before {
