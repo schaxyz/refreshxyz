@@ -61,17 +61,18 @@ section[class^="panels_"]>div[class^="mask_"] {
   display: none !important;
 }
 
-/* Remove buttons related to gifts, GIFs, stickers, and translation */
-button[aria-label|="Send a gift"], /* Hide gift sending button */
-button[aria-label|="Open GIF picker"], /* Hide GIF picker button */
-button[aria-label|="Open sticker picker"], /* Hide sticker picker button */
-button[aria-label|="Open Translate Modal"]{  /* Hide translate button */
+/* hide nercessary button */
+div[aria-label="Send a gift"],
+div[aria-label="Open GIF picker"],
+div[aria-label="Open sticker picker"] {
   display: none;
 }
-
-/* Remove App Launcher (chat bar) */
-.visual-refresh .buttonContainer_e6e74f {
-  display: none;
+button[aria-label|="Open Translate Modal"]{
+display: none;
+}
+/* App launcher */
+.channelAppLauncher_e6e74f {
+    display: none;
 }
 
 /* Remove EMOJI (MORE Buttons) */
